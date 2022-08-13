@@ -1,22 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from '../styles/Assets.module.css'
+import {AssetProp} from '../pages/index'
 
-type Asset = {
-  asset:{
-    name: string;
-    assetId: string;
-    available: boolean;
-    logo: string | undefined;
-    unitname1: string;
-  };
-}
-
-export const Assets = ({asset} : Asset ) => {
+export const Assets = ({asset} : AssetProp ) => {
     return (
-        <div className={styles.low}>
+        <div className={styles.single}>
             <div className={asset.unitname1} ></div>
-            <img src = {asset.logo} width={100} height={100}  alt={asset.unitname1} />
-           { asset.available ? <div className='hello' ></div> : <div className='hello' ></div> }
+            <img src = {asset.logo} width={10} height={10}  alt={asset.unitname1} />
+           { asset.available ? 
+           <button className='hello' >Availavle</button> : 
+           <button className='hello' >Unavailable</button> }
             <div className={asset.name} ></div>
         </div>
     )
