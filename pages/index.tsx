@@ -70,7 +70,7 @@ interface Countries {
 
 const Home = ({ assets, loading }: Assets) => {
 
-  console.log({ loading, assets });
+
 
   return (
     <>
