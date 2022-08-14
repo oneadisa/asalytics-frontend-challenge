@@ -53,6 +53,7 @@
   flex-direction: column;
   font-family: "Readex Pro", sans-serif;
   text-align: center;
+  font-weight: 500;
   /* justify-content: space-evenly; */
 }
 
