@@ -22,7 +22,6 @@ export async function getStaticProps() {
       }
     `,
   });
-  console.log({ loading, error, data });
 
   return {
     props: {
