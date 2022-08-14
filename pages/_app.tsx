@@ -1,17 +1,8 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-// import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-// import client from '../apollo-client';
-
-// const client = new ApolloClient({
-//   uri: 'https://analytics-api.herokuapp.com/analytics',
-//   cache: new InMemoryCache()
-// });
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  // <ApolloProvider client={client}>
-  return <Component {...pageProps} />
-//  </ApolloProvider>
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;

@@ -5,7 +5,7 @@
   transform: translateY(-3rem);
 }
 .text {
-  color:#000000
+  color: #000000;
 }
 .btn {
   display: block;
@@ -19,25 +19,24 @@
 }
 
 .assetBody {
-	display: flex;
+  display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: var(--size-4);
-	place-items: center;
-	min-height: 100vh;
-	background: var(--surface-2);
-	font-family: 'Google Sans', sans-serif, system-ui;
+  place-items: center;
+  min-height: 100vh;
+  background: var(--surface-2);
+  font-family: "Google Sans", sans-serif, system-ui;
 }
 
 .assetContainer {
-  
-  display : flex;
-   flex-direction : row;
-    height : auto;
-    gap : 25px;
-    justify-content : center;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  gap: 25px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
