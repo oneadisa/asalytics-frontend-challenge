@@ -1,10 +1,11 @@
 .title {
-  color: #333;
+  color: #000000;
   padding-bottom: 20px;
   text-align: center;
+  transform: translateY(-3rem);
 }
 .text {
-  color: #777;
+  color:#000000
 }
 .btn {
   display: block;
@@ -15,4 +16,28 @@
   border-radius: 4px;
   color: white;
   text-align: center;
+}
+
+.assetBody {
+	display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-wrap: wrap;
+  gap: var(--size-4);
+	place-items: center;
+	min-height: 100vh;
+	background: var(--surface-2);
+	font-family: 'Google Sans', sans-serif, system-ui;
+}
+
+.assetContainer {
+  
+  display : flex;
+   flex-direction : row;
+    height : auto;
+    gap : 25px;
+    justify-content : center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }

@@ -4,13 +4,16 @@ import {AssetProp} from '../pages/index'
 
 export const Assets = ({asset} : AssetProp ) => {
     return (
-        <div className={styles.single}>
-            <div className={asset.unitname1} ></div>
-            <img src = {asset.logo} width={10} height={10}  alt={asset.unitname1} />
+        <div className={styles.assetBox}>
+          <div className={styles.assetItem}>
+            {asset.logo === null ? 
+            <img src = '/alogrand.png' width={40} height={40}  alt={asset.unitname1} /> 
+            :<img src = {asset.logo} width={30} height={30}  alt={asset.unitname1} />}
+            <p>{asset.name}</p>
            { asset.available ? 
-           <button className='hello' >Availavle</button> : 
-           <button className='hello' >Unavailable</button> }
-            <div className={asset.name} ></div>
+           <button className={styles.available} >Available</button> : 
+           <button className={styles.unavailable} >Unavailable</button> }
+            </div>
         </div>
     )
 }

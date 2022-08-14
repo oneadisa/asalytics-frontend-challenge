@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500&display=swap');
 
 body {
-  background: #f2f2f2;
+  background: #F2FBF6;
   color: #333;
-  font-family: "Nunito";
+  font-family: 'Readex Pro', sans-serif;
 }
 a {
   color: #333;
@@ -19,11 +19,11 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  border-bottom: 1px solid #ddd;
+  overflow: hidden
 }
-nav a {
+/* nav button {
   margin-left: 12px;
-}
+} */
 nav .logo {
   margin-right: auto;
 }
@@ -42,3 +42,48 @@ footer {
   color: #4979ff;
   text-decoration: underline;
 }
+
+
+.button-nav {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+  min-height: 50px;
+  min-width: 0;
+  outline: none;
+  /* margin-bottom: 200px; */
+  transform: translateY(-3rem);
+  /* transform: translateX(-0.5rem); */
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 12%;
+  /* will-change: transform; */
+}
+
+/* .button-nav:disabled {
+  pointer-events: none;
+}
+
+.button-nav:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-nav:active {
+  box-shadow: none;
+  transform: translateY(0);
+} */
